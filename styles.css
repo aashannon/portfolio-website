@@ -1,0 +1,871 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*============================== end reset ====================================*/
+
+html{
+	background-color: #1D1D34;
+	font-size: 16px;
+}
+
+.landBody{
+	padding: 0 2rem;
+}
+
+.about {
+	color: #DCAA6A;
+	font-family: "Arial";
+}
+
+.mylogo {
+	color: #4FBEA9;
+	font-family: "Arial";
+}
+
+.contact {
+	color: #7D7AFF;
+	font-family: "Arial";	
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+.box-10 a:link, .box-10 a:visited, .box-10 a:active {
+	color: #7D7AFF;
+}
+
+.box-10 a:hover {
+	color: #5B59BA;
+}
+
+.box-11 a:link, .box-11 a:visited, .box-11 a:active {
+	color: #7D7AFF;
+}
+
+.box-11 a:hover {
+	color: #5B59BA;
+}
+
+.box-12 a:link, .box-12 a:visited, .box-12 a:active {
+	color: #7D7AFF;
+}
+
+.box-12 a:hover {
+	color: #5B59BA;
+}
+
+/*----------------------- Landing Header ---------------------------*/
+
+.landHead {
+	text-align: center;
+}
+
+.landHead h1{
+	font-size: 2.7rem;
+	font-family: "Arial";
+}
+
+.landHead h2 {
+	font-size: 1.2rem;
+	font-family: "Arial";
+	color: lightgrey;
+}
+
+.landHead a {
+	color: whitesmoke;
+}
+
+.landBanner img {
+	position: relative;
+	width: 100%;
+}
+
+/*------------------------ Landing Navigation -------------------------*/
+
+.landNav {
+	position: relative;
+	top: 50px;
+}
+
+.landNav ul {
+	display: grid;
+	grid-gap: 1rem;
+}
+
+.landNav p {
+	font-family: "Arial";
+}
+
+.linkChild-1 {
+	width: 90%;
+	clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+	background-color: #DCAA6A;
+	transition: width 0.5s ease-in-out;
+	padding: 0.2rem 0;
+}
+
+.linkChild-1:hover{
+	width: 100%;
+	transition: width 0.5s ease-in-out;
+}
+
+.linkChild-2 {
+	width: 67%;
+	clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+	background-color: #4FBEA9;
+	transition: width 0.5s ease-in-out;
+	padding: 0.2rem 0;
+}
+
+.linkChild-2:hover{
+	width: 100%;
+	transition: width 0.5s ease-in-out;
+}
+
+.linkChild-3 {
+	width: 75%;
+	clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+	background-color: #7D7AFF;
+	transition: width 0.5s ease-in-out;
+	padding: 0.2rem 0;
+}
+
+.linkChild-3:hover{
+	width: 100%;
+	transition: width 0.5s ease-in-out;
+}
+
+.linkChild-1 a, .linkChild-2 a, .linkChild-3 a{
+	color: #1D1D34;
+	font-size: 1.2rem;
+}
+
+.linkChild-1 p, .linkChild-2 p, .linkChild-3 p {
+	margin-left: 0.5rem;
+}
+
+/*-------------------------- Landing Logo -----------------------------*/
+
+.landLogo {
+	text-align: center;
+}
+
+.landLogo img {
+	width: 70%;
+	margin-top: 5%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*------------------------------ Header --------------------------------*/
+
+.header-image {
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+
+.header-image img{
+	width: 100%;
+}
+
+.nameTitle {
+	position: absolute;
+	top: 5px;
+	margin-left: 5rem;
+	color: whitesmoke;
+}
+
+.nameTitle h1{
+	font-size: 2rem;
+	font-family: "Arial";
+}
+
+.nameTitle h2{
+	font-size: 1rem;
+	font-family: "Arial";
+}
+
+.bannerLogo {
+	width: 20%;
+	margin-left: 0.5rem;
+	position: absolute;
+	top: -7px;
+}
+
+/*---------------------- Nav Menu -----------------------*/
+
+.hamburger-menu {
+  display: block;
+  position: absolute;
+  top: 17px;
+  right: 15px;
+  width: 30px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger-menu__line {
+  display: block;
+  width: 100%;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #000;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+}
+
+.hamburger-menu__line:first-child {
+  transform-origin: center left;
+}
+
+.hamburger-menu__line:last-child {
+  transform-origin: center right;
+}
+
+nav ul {
+  display: none;
+  position: absolute;
+  border-radius: 2px;
+  top: 70px;
+  right: 0;
+  background-color: rgba(230, 230, 230, 0.9);
+  list-style: none;
+  padding: 20px;
+  height: 100px;
+}
+
+nav ul.show {
+  display: block;
+  animation: slide-in 0.5s forwards;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+nav li {
+	padding-bottom: 0.5rem;
+}
+
+nav a {
+	color: black;
+	font-size: 1rem;
+	font-family: "Arial";
+}
+
+
+/*------------------------------- Body ---------------------------------*/
+
+.software-info {
+	margin-left: 2rem;
+	position: relative;
+	top: 50px;
+	width: 60%;
+}
+
+.software-info ul{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1rem;
+}
+
+.software-info li {
+	color: whitesmoke;
+	font-size: 1rem;
+	font-family: "Arial";
+}
+
+.content-grid {
+	position: relative;
+	top: 50px;
+	display: grid;
+	grid-gap: 1rem;
+	margin-top: 2rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+.content-grid img {
+	width: 100%;
+}
+
+.content-grid p {
+	margin-bottom: 2rem;
+	color: lightgrey;
+	font-family: "Arial";
+}
+
+.content-grid iframe {
+	width: 100%;
+	height: 100%;
+}
+
+/*-------------------------- Software Body -----------------------------*/
+
+.software-title-bar {
+	width: 75%;
+	clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+	background-color: #DCAA6A;
+	padding: 0.2rem 0;
+	margin-left: 2rem;
+	position: absolute;
+	top: 75px;
+}
+
+.software-title-bar p {
+	font-size: 1.2rem;
+	margin-left: 0.5rem;
+	font-family: "Arial";
+}
+
+.s-first-word {
+	color: #DCAA6A;
+}
+
+
+/*------------------------ Multimedia Body ---------------------------*/
+
+.multimedia-title-bar {
+	width: 55%;
+	clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+	background-color: #4FBEA9;
+	padding: 0.2rem 0;
+	margin-left: 2rem;
+	position: absolute;
+	top: 75px;
+}
+
+.multimedia-title-bar p {
+	font-size: 1.2rem;
+	margin-left: 0.5rem;
+	font-family: "Arial";
+}
+
+.s-img-10 {
+	background-color: gray;
+}
+
+.m-first-word {
+	color: #4FBEA9;
+}
+
+/*------------------------ Web Development Body --------------------*/
+
+.web-title-bar {
+	width: 65%;
+	clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+	background-color: #7D7AFF;
+	transition: width 0.5s ease-in-out;
+	padding: 0.2rem 0;
+	margin-left: 2rem;
+	position: absolute;
+	top: 75px;
+}
+
+.web-title-bar p {
+	font-size: 1.2rem;
+	margin-left: 0.5rem;
+	font-family: "Arial";
+}
+
+.w-first-word {
+	color: #7D7AFF;
+}
+
+/*-------------------------- Biography ----------------------------*/
+
+.content-grid-bio {
+	position: relative;
+	display: grid;
+	grid-gap: 1rem;
+	margin-top: 2rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+.content-grid-bio img {
+	width: 100%;
+	border-radius: 2px;
+}
+
+.content-grid-bio p {
+	margin-bottom: 2rem;
+	color: lightgrey;
+	font-family: "Arial";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*========================== Tablet ==========================================*/
+
+@media (min-width: 600px) {
+
+	.bannerLogo {
+		width: 22%;
+		top: -25px;
+		margin-left: 1rem;
+	}
+
+	.nameTitle {
+		margin-left: 12rem;
+	}
+
+	.nameTitle h1 {
+		font-size: 4rem;
+	}
+
+	.nameTitle h2 {
+		font-size: 2rem;
+	}
+
+	.content-grid {
+		grid-template-columns: 1fr 1fr;
+		margin-top: 5rem;
+		margin-bottom: 2rem;
+		top: 100px;
+	}
+
+	.content-grid p {
+		font-size: 1.5rem;
+	}
+
+	.software-info {
+		top: 100px;
+		width: 80%;
+	}
+
+	.software-info li {
+		font-size: 2rem;
+	}
+
+	.hamburger-menu {
+		width: 70px;
+		height: 100px;
+		right: 35px;
+	}
+
+	.hamburger-menu__line {
+		height: 5px;
+		margin: 10px auto;
+	}
+
+	nav ul {
+		top: 100px;
+		height: 200px;
+	}
+
+	nav a {
+		font-size: 2.5rem;
+	}
+
+
+	/*------------------ Landing ----------------------*/
+
+	.landLogo img {
+		margin-top: 0;
+		width: 70%;
+	}
+
+	.landHead h1 {
+		font-size: 5rem;
+	}
+
+	.landHead h2 {
+		font-size: 2.5rem;
+	}
+
+	.landBanner img{
+		top: 0px;
+	}
+
+	.landNav {
+		top: 100px;
+	}
+
+	.linkChild-1 a, .linkChild-2 a, .linkChild-3 a {
+		font-size: 2.5rem;
+	}
+
+	/*------------------ Sotware ----------------------*/
+
+	.software-title-bar {
+		top: 165px;
+	}
+
+	.software-title-bar p {
+		font-size: 2.5rem;
+	}
+	
+	.box-1 {
+		grid-column: 2/3;
+		grid-row: 1/3;
+	}
+
+	.box-2 {
+		grid-row: 3/5;
+	}
+
+	.box-3 {
+		grid-column: 2/3;
+		grid-row: 5/7;
+	}
+
+	.box-4 {
+		grid-row: 7/9;
+	}
+
+	.box-5 {
+		grid-column: 2/3;
+		grid-row: 9/11;
+	}
+
+	.box-6 {
+		grid-row: 11/13;
+	}
+
+	.s-img-1, .s-img-2, .s-img-3, .s-img-4, .s-img-5, .s-img-6 {
+		padding-bottom: 3rem;
+	}
+
+
+	/*---------------- Multimedia --------------------*/
+
+	.multimedia-title-bar {
+		top: 165px;
+	}
+
+	.multimedia-title-bar p {
+		font-size: 2.5rem;
+	}
+
+	.content-grid iframe {
+		grid-column: 1/3;
+		height: 350px;
+	}
+
+	.box-8 {
+		grid-column: 1/2;
+		grid-row: 3/4;
+	}
+
+	.s-img-7, .s-img-8, .s-img-9 {
+		padding-bottom: 3rem;
+	}
+
+
+	/*--------------------- Web ----------------------*/
+
+	.web-title-bar {
+		top: 165px;
+	}
+
+	.web-title-bar p {
+		font-size: 2.5rem;
+	}
+
+	.box-10 {
+		grid-column: 2/3;
+		grid-row: 1/3;
+	}
+
+	.box-11 {
+		grid-row: 3/5;
+	}
+
+	.box-12 {
+		grid-column: 2/3;
+		grid-row: 5/7;
+	}
+
+	.s-img-11, .s-img-12, .s-img-13 {
+		padding-bottom: 3rem;
+	}
+
+
+	/*--------------------- Bio ----------------------*/
+
+	.content-grid-bio {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.content-grid-bio {
+		font-size: 1.5rem;
+	}
+
+	.s-img-14 {
+		padding-bottom: 3rem;
+	}
+
+
+
+
+
+
+
+
+
+
+	/*========================== Full Screen ==================================*/
+
+	@media (min-width:1100px){
+
+		.header-image img {
+			height: 100px;
+		}
+
+		.bannerLogo {
+			top: -30px;
+			margin-left: 1rem;
+		}
+
+		.bannerLogo img {
+			width: 150px;
+			height: 150px;
+		}
+
+		.nameTitle {
+			margin-left: 10rem;
+		}
+
+		.nameTitle h1 {
+			font-size: 3rem;
+		}
+
+		.nameTitle h2 {
+			font-size: 1.5rem;
+		}
+
+		.content-grid {
+			grid-template-columns: 1fr 1fr;
+			margin-top: 5rem;
+			margin-bottom: 2rem;
+			width: 70%;
+			margin-left: 300px;
+		}
+
+		.content-grid p {
+			line-height: 2rem;
+		}
+
+		.software-info {
+			top: 100px;
+			width: 80%;
+		}
+
+		.software-info li {
+			font-size: 2rem;
+		}
+
+		/*------------------ Landing ----------------------*/
+
+		.landLogo img {
+			width: 30%;
+		}
+
+		.landBanner img{
+			display: none;
+		}
+
+		.landNav {
+			top: 50px;
+		}
+
+		.linkChild-1 {
+			width: 65%;
+		}
+
+		.linkChild-2 {
+			width: 35%;
+		}
+
+		.linkChild-3 {
+			width: 50%;
+		}
+
+
+		/*------------------ Software ----------------------*/
+
+		.software-title-bar {
+			top: 120px;
+		}
+
+		.software-title-bar p {
+			font-size: 2.5rem;
+			margin-left: 2rem;
+		}
+
+
+		/*----------------- Mutlimedia --------------------*/
+
+		.multimedia-title-bar {
+			top: 120px;
+		}
+
+		.multimedia-title-bar p {
+			font-size: 2.5rem;
+			margin-left: 2rem;
+		}
+
+		/*--------------------- Web ----------------------*/
+
+		.web-title-bar {
+			top: 120px;
+		}
+
+		.web-title-bar p {
+			font-size: 2.5rem;
+			margin-left: 2rem;
+		}
+
+
+		/*--------------------- Web ----------------------*/
+
+		.content-grid-bio {
+			width: 70%;
+			margin-left: 300px;
+		}
+
+		.content-grid-bio img {
+			width: 80%;
+		}
+
+		.content-grid-bio {
+			line-height: 2rem;
+		}
+
+		.box-14 {
+			grid-column: 1/3;
+		}
+
+		.box-15 {
+			grid-column: 1/3;
+		}
+
+		.hamburger-menu {
+			display: none;
+		}
+
+		.nav-1 ul {
+			display: inline-grid;
+			background-color: transparent;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-gap: 1rem;
+			position: absolute;
+			top: 40px;
+		}
+
+		.nav-1 li {
+			text-align: center;
+		}
+
+		.nav-1 a {
+			font-family: "Arial";
+			font-size: 1.5rem;
+		}
+
+	}
+
+}
+
+
+
+
+
+
+
+
